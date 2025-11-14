@@ -1,53 +1,36 @@
 'use server'
 
+import { callLLM } from '@/lib/llm-service';
+
 /**
  * Server Action: callAiApi
- * Securely calls Google Gemini API
- * Keeps API key on server-side only, never exposed to client
+ * Handles AI API calls with load balancing across multiple providers
+ * Automatically falls back to available providers if one fails
  */
-export async function callAiApi(message: string) {
-  const apiKey = process.env.NEXT_PUBLIC_API_KEY
-
-  if (!apiKey) {
-    throw new Error('Gemini API key not configured')
-  }
-
-  const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`
-
+export async function callAiApi(message: string): Promise<string> {
   try {
-    const response = await fetch(apiUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        contents: [
-          {
-            parts: [
-              {
-                text: message,
-              },
-            ],
-          },
-        ],
-      }),
-    })
-
-    if (!response.ok) {
-      const errorData = await response.json()
-      throw new Error(`Gemini API error: ${response.status} - ${errorData.error?.message || 'Unknown error'}`)
-    }
-
-    const data = await response.json()
-    const text = data.candidates?.[0]?.content?.parts?.[0]?.text
-    
-    if (!text) {
-      throw new Error('No response generated from Gemini')
-    }
-
-    return text
+    const response = await callLLM(message);
+    return response.content;
   } catch (error) {
-    console.error('Gemini API call failed:', error)
-    throw error
+    console.error('AI API call failed:', error);
+    throw new Error('Failed to get response from AI service. Please try again.');
   }
+}
+
+/**
+ * Get information about available LLM providers
+ */
+export async function getLLMProvidersInfo() {
+  const { getActiveProviders } = await import('@/lib/llm-providers');
+  const activeProviders = getActiveProviders();
+  
+  return {
+    count: activeProviders.length,
+    providers: activeProviders.map(p => ({
+      id: p.id,
+      name: p.name,
+      model: p.model,
+      priority: p.priority
+    }))
+  };
 }
