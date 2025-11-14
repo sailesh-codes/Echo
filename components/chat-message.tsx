@@ -19,19 +19,19 @@ export default function ChatMessage({ message }: ChatMessageProps) {
   const isUser = message.role === 'user'
 
   return (
-    <div className={`flex ${isUser ? 'justify-end' : 'justify-start'} animate-in fade-in duration-300`}>
+    <div className={`flex ${isUser ? 'justify-end' : 'justify-start'} animate-in fade-in duration-300 px-4`}>
       <div
-        className={`max-w-2xl rounded-xl px-4 py-3 ${
+        className={`max-w-2xl rounded-lg px-5 py-4 ${
           isUser
-            ? 'bg-[#0a0f13] text-aqua-100 border-r-4 border-aqua-400/80 backdrop-blur-sm ml-auto'
-            : 'bg-[#0a0f13] text-aqua-100 border-l-4 border-aqua-500/80 backdrop-blur-sm'
+            ? 'bg-gray-900 text-white border-r-2 border-primary-400 ml-auto shadow-glow'
+            : 'bg-gray-900 text-gray-100 border-l-2 border-primary-500 shadow-glow'
         }`}
       >
-        <p className="text-sm leading-relaxed break-words whitespace-pre-wrap">
+        <p className="text-[15px] leading-relaxed break-words whitespace-pre-wrap font-light">
           {message.content.split('\n').map((line, i) => (
             <span key={i}>
               {line}
-              <br />
+              {line === '' ? <br /> : null}
             </span>
           ))}
         </p>

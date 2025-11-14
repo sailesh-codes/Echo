@@ -24,20 +24,24 @@ export default function ChatWindow({ messages, isLoading }: ChatWindowProps) {
   }, [messages, isLoading])
 
   return (
-    <div className="flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-aqua-900/50 scrollbar-track-transparent pb-40">
+    <div className="flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-primary-800/30 scrollbar-track-transparent pb-40 bg-black">
       <div className="h-full flex flex-col">
         {messages.length === 0 && !isLoading ? (
           <div className="flex-1 flex flex-col items-center justify-center text-center px-4 pt-16 pb-40">
-            <div className="w-16 h-16 rounded-2xl bg-gradient-to-r from-aqua-500 to-aqua-300 flex items-center justify-center mb-6">
+            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center mb-6 shadow-glow">
               <span className="text-4xl text-black">✨</span>
             </div>
-            <h2 className="text-4xl font-bold bg-gradient-to-r from-aqua-400 to-aqua-200 bg-clip-text text-transparent mb-2">Echo</h2>
-            <p className="text-xl text-aqua-300/80 mb-8">Intelligent AI Assistant</p>
-            <p className="text-5xl font-light text-white/90 mb-12">Ask me anything.</p>
+            <h2 className="text-5xl font-bold text-white mb-3">Echo</h2>
+            <p className="text-xl text-primary-300/90 mb-10 font-light">Your Intelligent AI Assistant</p>
+            <div className="max-w-2xl mx-auto">
+              <p className="text-4xl font-light text-white/80 mb-12 leading-tight">
+                How can I help you <span className="text-primary-400">today</span>?
+              </p>
+            </div>
           </div>
         ) : (
           /* Messages container */
-          <div className="w-full max-w-4xl mx-auto px-4 py-8 space-y-6 pb-40">
+          <div className="w-full max-w-4xl mx-auto px-4 py-8 space-y-6 pb-40 bg-black">
             {messages.map((message) => (
               <ChatMessage key={message.id} message={message} />
             ))}

@@ -27,19 +27,19 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$
 function ChatMessage({ message }) {
     const isUser = message.role === 'user';
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: `flex ${isUser ? 'justify-end' : 'justify-start'} animate-in fade-in duration-300`,
+        className: `flex ${isUser ? 'justify-end' : 'justify-start'} animate-in fade-in duration-300 px-4`,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: `max-w-2xl rounded-xl px-4 py-3 ${isUser ? 'bg-[#0a0f13] text-aqua-100 border-r-4 border-aqua-400/80 backdrop-blur-sm ml-auto' : 'bg-[#0a0f13] text-aqua-100 border-l-4 border-aqua-500/80 backdrop-blur-sm'}`,
+            className: `max-w-2xl rounded-lg px-5 py-4 ${isUser ? 'bg-gray-900 text-white border-r-2 border-primary-400 ml-auto shadow-glow' : 'bg-gray-900 text-gray-100 border-l-2 border-primary-500 shadow-glow'}`,
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: "text-sm leading-relaxed break-words whitespace-pre-wrap",
+                className: "text-[15px] leading-relaxed break-words whitespace-pre-wrap font-light",
                 children: message.content.split('\n').map((line, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         children: [
                             line,
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                            line === '' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                 fileName: "[project]/OneDrive/Desktop/Echo/components/chat-message.tsx",
                                 lineNumber: 34,
-                                columnNumber: 15
-                            }, this)
+                                columnNumber: 30
+                            }, this) : null
                         ]
                     }, i, true, {
                         fileName: "[project]/OneDrive/Desktop/Echo/components/chat-message.tsx",
@@ -81,14 +81,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$
 ;
 function TypingIndicator() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex justify-start",
+        className: "flex justify-start px-4",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "bg-gray-800 text-gray-100 rounded-2xl px-4 py-3",
+            className: "bg-gray-900 text-gray-100 rounded-2xl px-4 py-3 border border-primary-500/30 shadow-glow",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex gap-2",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "w-2 h-2 bg-gray-500 rounded-full animate-bounce",
+                        className: "w-2 h-2 bg-primary-400 rounded-full animate-bounce",
                         style: {
                             animationDelay: '0s'
                         }
@@ -98,7 +98,7 @@ function TypingIndicator() {
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "w-2 h-2 bg-gray-500 rounded-full animate-bounce",
+                        className: "w-2 h-2 bg-primary-400 rounded-full animate-bounce",
                         style: {
                             animationDelay: '0.2s'
                         }
@@ -108,7 +108,7 @@ function TypingIndicator() {
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "w-2 h-2 bg-gray-500 rounded-full animate-bounce",
+                        className: "w-2 h-2 bg-primary-400 rounded-full animate-bounce",
                         style: {
                             animationDelay: '0.4s'
                         }
@@ -172,7 +172,7 @@ function ChatWindow({ messages, isLoading }) {
         isLoading
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-aqua-900/50 scrollbar-track-transparent pb-40",
+        className: "flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-primary-800/30 scrollbar-track-transparent pb-40 bg-black",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "h-full flex flex-col",
             children: [
@@ -180,7 +180,7 @@ function ChatWindow({ messages, isLoading }) {
                     className: "flex-1 flex flex-col items-center justify-center text-center px-4 pt-16 pb-40",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "w-16 h-16 rounded-2xl bg-gradient-to-r from-aqua-500 to-aqua-300 flex items-center justify-center mb-6",
+                            className: "w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center mb-6 shadow-glow",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "text-4xl text-black",
                                 children: "✨"
@@ -195,7 +195,7 @@ function ChatWindow({ messages, isLoading }) {
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-4xl font-bold bg-gradient-to-r from-aqua-400 to-aqua-200 bg-clip-text text-transparent mb-2",
+                            className: "text-5xl font-bold text-white mb-3",
                             children: "Echo"
                         }, void 0, false, {
                             fileName: "[project]/OneDrive/Desktop/Echo/components/chat-window.tsx",
@@ -203,16 +203,34 @@ function ChatWindow({ messages, isLoading }) {
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-xl text-aqua-300/80 mb-8",
-                            children: "Intelligent AI Assistant"
+                            className: "text-xl text-primary-300/90 mb-10 font-light",
+                            children: "Your Intelligent AI Assistant"
                         }, void 0, false, {
                             fileName: "[project]/OneDrive/Desktop/Echo/components/chat-window.tsx",
                             lineNumber: 35,
                             columnNumber: 13
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-5xl font-light text-white/90 mb-12",
-                            children: "Ask me anything."
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "max-w-2xl mx-auto",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-4xl font-light text-white/80 mb-12 leading-tight",
+                                children: [
+                                    "How can I help you ",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-primary-400",
+                                        children: "today"
+                                    }, void 0, false, {
+                                        fileName: "[project]/OneDrive/Desktop/Echo/components/chat-window.tsx",
+                                        lineNumber: 38,
+                                        columnNumber: 36
+                                    }, this),
+                                    "?"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/OneDrive/Desktop/Echo/components/chat-window.tsx",
+                                lineNumber: 37,
+                                columnNumber: 15
+                            }, this)
                         }, void 0, false, {
                             fileName: "[project]/OneDrive/Desktop/Echo/components/chat-window.tsx",
                             lineNumber: 36,
@@ -224,43 +242,43 @@ function ChatWindow({ messages, isLoading }) {
                     lineNumber: 30,
                     columnNumber: 11
                 }, this) : /* Messages container */ /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-full max-w-4xl mx-auto px-4 py-8 space-y-6 pb-40",
+                    className: "w-full max-w-4xl mx-auto px-4 py-8 space-y-6 pb-40 bg-black",
                     children: [
                         messages.map((message)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$components$2f$chat$2d$message$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 message: message
                             }, message.id, false, {
                                 fileName: "[project]/OneDrive/Desktop/Echo/components/chat-window.tsx",
-                                lineNumber: 42,
+                                lineNumber: 46,
                                 columnNumber: 15
                             }, this)),
                         isLoading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$components$2f$typing$2d$indicator$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/OneDrive/Desktop/Echo/components/chat-window.tsx",
-                            lineNumber: 44,
+                            lineNumber: 48,
                             columnNumber: 27
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             ref: messagesEndRef
                         }, void 0, false, {
                             fileName: "[project]/OneDrive/Desktop/Echo/components/chat-window.tsx",
-                            lineNumber: 45,
+                            lineNumber: 49,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/OneDrive/Desktop/Echo/components/chat-window.tsx",
-                    lineNumber: 40,
+                    lineNumber: 44,
                     columnNumber: 11
                 }, this),
                 messages.length === 0 && isLoading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex-1 flex items-center justify-center",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$components$2f$typing$2d$indicator$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/OneDrive/Desktop/Echo/components/chat-window.tsx",
-                        lineNumber: 52,
+                        lineNumber: 56,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/OneDrive/Desktop/Echo/components/chat-window.tsx",
-                    lineNumber: 51,
+                    lineNumber: 55,
                     columnNumber: 11
                 }, this)
             ]
@@ -327,18 +345,18 @@ function InputBar({ onSendMessage, isLoading }) {
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "fixed bottom-0 left-0 right-0 bg-gradient-to-t from-black to-black/80 py-4 px-4 border-t border-aqua-500/20",
+        className: "fixed bottom-0 left-0 right-0 bg-black/95 py-4 px-4 border-t border-primary-500/20 backdrop-blur-sm",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-3xl mx-auto",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                 onSubmit: handleSubmit,
-                className: "flex items-end gap-3 bg-[#0a0a0a] rounded-xl p-1.5 border border-aqua-400/30 shadow-xl",
+                className: "flex items-end gap-3 bg-gray-900/80 rounded-xl p-1.5 border border-primary-500/30 shadow-glow-md",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center gap-2 bg-white/10 hover:bg-white/20 transition-colors rounded-xl px-3 py-2 cursor-pointer",
+                        className: "flex items-center gap-2 bg-primary-500/10 hover:bg-primary-500/20 transition-colors rounded-xl px-3 py-2 cursor-pointer",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-white/90 text-sm font-medium",
+                                className: "text-primary-300 text-sm font-medium",
                                 children: "Text"
                             }, void 0, false, {
                                 fileName: "[project]/OneDrive/Desktop/Echo/components/input-bar.tsx",
@@ -346,7 +364,7 @@ function InputBar({ onSendMessage, isLoading }) {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                className: "w-4 h-4 text-white/60",
+                                className: "w-4 h-4 text-primary-300",
                                 fill: "none",
                                 stroke: "currentColor",
                                 viewBox: "0 0 24 24",
@@ -380,7 +398,7 @@ function InputBar({ onSendMessage, isLoading }) {
                                 onChange: (e)=>setInput(e.target.value),
                                 onKeyDown: handleKeyDown,
                                 placeholder: "Ask me anything...",
-                                className: "w-full bg-[#111] text-white placeholder-aqua-300/80 text-sm px-4 py-3 pr-12 focus:outline-none resize-none overflow-hidden rounded-lg border border-aqua-400/50 focus:border-aqua-300 transition-colors shadow-lg shadow-aqua-500/10",
+                                className: "w-full bg-gray-800/80 text-white placeholder-primary-400/60 text-sm px-4 py-3 pr-12 focus:outline-none resize-none overflow-hidden rounded-lg border border-primary-500/30 focus:border-primary-400/70 transition-all duration-200 shadow-inner",
                                 rows: 1,
                                 style: {
                                     minHeight: '44px',
@@ -393,7 +411,7 @@ function InputBar({ onSendMessage, isLoading }) {
                             }, this),
                             input && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 type: "button",
-                                className: "absolute right-12 top-1/2 transform -translate-y-1/2 p-1.5 text-aqua-300 hover:text-white rounded-full hover:bg-aqua-500/20 transition-colors",
+                                className: "absolute right-12 top-1/2 transform -translate-y-1/2 p-1.5 text-primary-300 hover:text-white rounded-full hover:bg-primary-500/20 transition-colors",
                                 onClick: ()=>setInput(''),
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                     className: "w-4 h-4",
@@ -429,9 +447,9 @@ function InputBar({ onSendMessage, isLoading }) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         type: "submit",
                         disabled: isLoading || !input.trim(),
-                        className: `p-2.5 rounded-xl ${isLoading || !input.trim() ? 'bg-aqua-900/20 text-aqua-300/30 cursor-not-allowed' : 'bg-gradient-to-r from-aqua-500 to-aqua-300 text-black font-medium hover:shadow-aqua-500/30 hover:shadow-lg'} transition-all`,
+                        className: `p-2.5 rounded-xl transition-all ${isLoading || !input.trim() ? 'bg-primary-900/20 text-primary-500/50 cursor-not-allowed' : 'bg-primary-500 text-white hover:bg-primary-400 hover:shadow-glow-md hover:scale-105 transform transition-all duration-200'}`,
                         children: isLoading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Echo$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"
+                            className: "w-5 h-5 border-2 border-primary-300/30 border-t-primary-300 rounded-full animate-spin"
                         }, void 0, false, {
                             fileName: "[project]/OneDrive/Desktop/Echo/components/input-bar.tsx",
                             lineNumber: 88,

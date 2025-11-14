@@ -37,16 +37,16 @@ export default function InputBar({ onSendMessage, isLoading }: InputBarProps) {
   }
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-gradient-to-t from-black to-black/80 py-4 px-4 border-t border-aqua-500/20">
+    <div className="fixed bottom-0 left-0 right-0 bg-black/95 py-4 px-4 border-t border-primary-500/20 backdrop-blur-sm">
       <div className="max-w-3xl mx-auto">
         <form 
           onSubmit={handleSubmit} 
-          className="flex items-end gap-3 bg-[#0a0a0a] rounded-xl p-1.5 border border-aqua-400/30 shadow-xl"
+          className="flex items-end gap-3 bg-gray-900/80 rounded-xl p-1.5 border border-primary-500/30 shadow-glow-md"
         >
           {/* Text mode selector */}
-          <div className="flex items-center gap-2 bg-white/10 hover:bg-white/20 transition-colors rounded-xl px-3 py-2 cursor-pointer">
-            <span className="text-white/90 text-sm font-medium">Text</span>
-            <svg className="w-4 h-4 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="flex items-center gap-2 bg-primary-500/10 hover:bg-primary-500/20 transition-colors rounded-xl px-3 py-2 cursor-pointer">
+            <span className="text-primary-300 text-sm font-medium">Text</span>
+            <svg className="w-4 h-4 text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
           </div>
@@ -58,14 +58,14 @@ export default function InputBar({ onSendMessage, isLoading }: InputBarProps) {
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
               placeholder="Ask me anything..."
-              className="w-full bg-[#111] text-white placeholder-aqua-300/80 text-sm px-4 py-3 pr-12 focus:outline-none resize-none overflow-hidden rounded-lg border border-aqua-400/50 focus:border-aqua-300 transition-colors shadow-lg shadow-aqua-500/10"
+              className="w-full bg-gray-800/80 text-white placeholder-primary-400/60 text-sm px-4 py-3 pr-12 focus:outline-none resize-none overflow-hidden rounded-lg border border-primary-500/30 focus:border-primary-400/70 transition-all duration-200 shadow-inner"
               rows={1}
               style={{ minHeight: '44px', maxHeight: '120px' }}
             />
             {input && (
               <button
                 type="button"
-                className="absolute right-12 top-1/2 transform -translate-y-1/2 p-1.5 text-aqua-300 hover:text-white rounded-full hover:bg-aqua-500/20 transition-colors"
+                className="absolute right-12 top-1/2 transform -translate-y-1/2 p-1.5 text-primary-300 hover:text-white rounded-full hover:bg-primary-500/20 transition-colors"
                 onClick={() => setInput('')}
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -78,14 +78,14 @@ export default function InputBar({ onSendMessage, isLoading }: InputBarProps) {
           <button
             type="submit"
             disabled={isLoading || !input.trim()}
-            className={`p-2.5 rounded-xl ${
+            className={`p-2.5 rounded-xl transition-all ${
               isLoading || !input.trim()
-                ? 'bg-aqua-900/20 text-aqua-300/30 cursor-not-allowed'
-                : 'bg-gradient-to-r from-aqua-500 to-aqua-300 text-black font-medium hover:shadow-aqua-500/30 hover:shadow-lg'
-            } transition-all`}
+                ? 'bg-primary-900/20 text-primary-500/50 cursor-not-allowed'
+                : 'bg-primary-500 text-white hover:bg-primary-400 hover:shadow-glow-md hover:scale-105 transform transition-all duration-200'
+            }`}
           >
             {isLoading ? (
-              <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+              <div className="w-5 h-5 border-2 border-primary-300/30 border-t-primary-300 rounded-full animate-spin"></div>
             ) : (
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M12 5l7 7-7 7" />
