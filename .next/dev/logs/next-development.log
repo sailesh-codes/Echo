@@ -1,0 +1,72 @@
+[00:00:01.474] Server  LOG      ✓ Ready in 986ms
+[00:00:12.373] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:12.563] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:12.563] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:12.563] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3001/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763114473367}
+[00:03:00.396] Server  LOG      ✓ Compiled in 111ms
+[00:07:06.796] Server  LOG      ✓ Compiled in 199ms
+[00:07:07.118] Browser ERROR   ./OneDrive/Desktop/Echo/components/sidebar.tsx:64:13
+Parsing ecmascript source code failed
+  62 |           </button>
+  63 |         </div>
+> 64 |       </div>
+     |             ^
+> 65 |
+     | ^
+> 66 |       {/* Toggle button for small screens */}
+     | ^^^^^^^
+  67 |       <button
+  68 |         onClick={onToggle}
+  69 |         className={`${
+
+Expected '</', got 'jsx text (
+
+      )'
+
+Import traces:
+  Client Component Browser:
+    ./OneDrive/Desktop/Echo/components/sidebar.tsx [Client Component Browser]
+    ./OneDrive/Desktop/Echo/app/page.tsx [Client Component Browser]
+    ./OneDrive/Desktop/Echo/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./OneDrive/Desktop/Echo/components/sidebar.tsx [Client Component SSR]
+    ./OneDrive/Desktop/Echo/app/page.tsx [Client Component SSR]
+    ./OneDrive/Desktop/Echo/app/page.tsx [Server Component]
+[00:07:26.940] Server  LOG      ✓ Compiled in 109ms
+[00:07:27.124] Browser ERROR   ./OneDrive/Desktop/Echo/components/sidebar.tsx:68:7
+Parsing ecmascript source code failed
+  66 |     </>
+  67 |
+> 68 |       {/* Toggle button for small screens */}
+     |       ^
+  69 |       <button
+  70 |         onClick={onToggle}
+  71 |         className={`${
+
+Expected ',', got '{'
+
+Import traces:
+  Client Component Browser:
+    ./OneDrive/Desktop/Echo/components/sidebar.tsx [Client Component Browser]
+    ./OneDrive/Desktop/Echo/app/page.tsx [Client Component Browser]
+    ./OneDrive/Desktop/Echo/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./OneDrive/Desktop/Echo/components/sidebar.tsx [Client Component SSR]
+    ./OneDrive/Desktop/Echo/app/page.tsx [Client Component SSR]
+    ./OneDrive/Desktop/Echo/app/page.tsx [Server Component]
+[00:14:24.824] Server  LOG      ✓ Compiled in 107ms
+[00:09:41.160] Server  LOG      ✓ Compiled in 212ms
+[00:11:12.898] Server  LOG      ✓ Compiled in 228ms
+[00:13:02.571] Server  LOG      ✓ Compiled in 90ms
+[00:32:46.858] Server  LOG      ✓ Compiled in 234ms
+[00:33:01.151] Server  LOG      ✓ Compiled in 179ms
+[00:33:11.164] Server  LOG      ✓ Compiled in 187ms
+[00:33:19.219] Server  LOG      ✓ Compiled in 192ms
+[00:34:37.924] Server  LOG      ✓ Compiled in 132ms
+[00:35:36.649] Server  LOG      ✓ Compiled in 114ms
+[00:36:45.895] Server  LOG      ✓ Compiled in 988ms
+[00:36:55.671] Server  LOG      ✓ Compiled in 182ms
+[00:37:07.182] Server  LOG      ✓ Compiled in 194ms
+[00:38:11.196] Server  LOG      ✓ Compiled in 171ms
